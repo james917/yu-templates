@@ -1,15 +1,234 @@
 @import "./bower_components/bootstrap/less/bootstrap.less";
 
-
-// body {
-//   padding-top: 50px;
-// }
+body {
+   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+   font-weight: 300;
+}
 .starter-template {
-  padding: 40px 15px;
+  padding: 240px 15px;
   text-align: center;
 }
 
+// Custom Navigation 
+.navbar-fixed-top-nav {
+    top:0;
+    border-width:0;
+    position: fixed;
+    right: 0;
+    left: 0;
+}
 
+.navbar-fixed-top-logo-search {
+    top: 40px;
+    border-width:0;
+    position: fixed;
+    right: 0;
+    left: 0;
+}
+
+
+.navbar-fixed-top {
+    top:130px;
+    border-width:0;
+}
+@media only screen and (max-width : 320px) {
+        
+.navbar-fixed-top {
+    top:0;
+    border-width:0;
+    
+    }
+}
+
+
+#mainNav{
+    background-color: #fff;
+    border-top:1px solid #e5e5e5;
+ &.navbar-nav {
+    > li > a {
+      color:#707070;
+
+      &:hover,
+      &:focus {
+        color: #00b09b;
+      }
+    }
+    > .active > a {
+      &,
+      &:hover,
+      &:focus {
+        color:#00b09b;
+          }
+        }
+     }     
+  
+}
+ 
+
+
+
+
+@media screen and (max-width: 768px){
+    .nav > li > a {
+        padding: 10px 10px;
+    }
+    .navbar {
+        border-radius: 0;
+    }   
+    
+
+}
+
+#topNav{
+    &.navbar {
+        min-height:5px;
+    }
+}
+
+
+.divider {
+    display: inline-block;
+    width: 0;
+    height: 1em;
+    margin-left:10px;
+    border-right:3px solid #e5e5e5;
+}
+
+
+@media screen and (max-width: 768px) {
+#topNavItems{
+    font-size: 12px;
+    font-weight:600;
+    }    
+   #topNavItems{
+      &.nav > li > a {
+        padding: 3px 8px;
+      }
+      &.navbar-nav {
+    > li > a {
+      color:red;
+
+      &:hover,
+      &:focus {
+        color: green;
+      }
+    }
+    > .active > a {
+      &,
+      &:hover,
+      &:focus {
+        color:purple;
+          }
+        }
+     }  
+      &.navbar-right {
+        float: right !important;
+        margin-right: 40px; 
+        }
+    }
+    #logoHeader img{
+             width:75%;   
+        }
+
+    #mainNav {
+        font-size:74%;
+        }
+    }
+    
+#mainNav {
+    text-transform:uppercase;
+    // font-size:100%;
+    font-weight: 600;
+    & a{
+        color:#c4c4c4;
+
+    }
+     &.nav > li > a:hover, .nav > li > a:focus {
+        text-decoration: none;
+        background-color:transparent;
+    }    
+}
+ .searchLabel {
+    font-family: "Times New Roman", Times, Palatino Linotype, Georgia, serif;
+    font-size:15px;
+    font-style: italic;
+    color: #a0a0a0;
+}
+
+.form-control {
+    height: 27px;
+    font-size: 14px;
+    font-style: italic;
+    background-color: #f2f2f2;
+    border: 1px solid #f2f2f2;
+    border-radius:0;
+    //  color: #005596;
+}
+.form-control::-webkit-input-placeholder {
+    font-family: "Times New Roman", Times, Palatino Linotype, Georgia, serif; 
+    font-weight: bold;
+    color:#005596;
+    
+}
+.form-control:-moz-placeholder {
+    font-family: "Times New Roman", Times, Palatino Linotype, Georgia, serif; 
+    font-weight: bold;
+    color:#005596;
+    
+}
+.form-control::-moz-placeholder {
+    font-family: "Times New Roman", Times, Palatino Linotype, Georgia, serif; 
+    font-weight: bold;
+    color:#005596;
+    
+}
+.form-control:-ms-input-placeholder {
+    font-family: "Times New Roman", Times, Palatino Linotype, Georgia, serif; 
+    font-weight: bold;
+    color:#005596;
+    
+}
+
+
+.btn-search{
+    color:#a0a0a0;
+    background-color: #fff;
+    border-color:transparent;
+    padding:0;
+}
+
+.navbar-top{
+    // background-color:#e3e3e3;
+    background: linear-gradient(90deg, #e3e3e3 83%, #002142 27%);
+    border-color:transparent;
+}
+
+.navbar-logo {
+    background-color:#fff;
+    border-color: transparent;
+}
+
+@media (max-width:768px){
+    .department-title {
+        font-size:26px;
+        margin-top:50px;
+        margin-right:-123px;
+        text-transform:uppercase;
+        color:#959595;
+    }
+}
+
+
+@media (max-width: 768px) {
+.navbar-right {
+    margin-right: 2px;
+ }
+}
+
+// Navigation slide left
+.navbar-fixed-top .navbar-collapse {
+    max-height:1000px;
+}
 
 
 @media screen and (max-width: 767px) {
@@ -19,7 +238,7 @@
   /* General styles for all menus */
   .cbp-spmenu {
     // background: #f8f8f8;
-    background: #777;
+    background: #f00;
     position: fixed;
     padding:0;
     margin:0 !important;
@@ -101,6 +320,3 @@
 }
 
 
-.navbar-fixed-top .navbar-collapse {
-    max-height:1000px;
-}

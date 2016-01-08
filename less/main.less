@@ -103,14 +103,18 @@ body {
    #topNavItems{
       &.nav > li > a {
         padding: 3px 8px;
+      &:hover,
+      &:focus {
+        background-color:transparent;
+          }
       }
       &.navbar-nav {
     > li > a {
       color:red;
-
       &:hover,
       &:focus {
         color: green;
+        outline:none
       }
     }
     > .active > a {
@@ -199,7 +203,7 @@ body {
 
 .navbar-top{
     // background-color:#e3e3e3;
-    background: linear-gradient(90deg, #e3e3e3 83%, #002142 27%);
+    background: linear-gradient(90deg, #e3e3e3 81%, #002142 19%);
     border-color:transparent;
 }
 

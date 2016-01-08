@@ -6798,12 +6798,17 @@ body {
   #topNavItems.nav > li > a {
     padding: 3px 8px;
   }
+  #topNavItems.nav > li > a:hover,
+  #topNavItems.nav > li > a:focus {
+    background-color: transparent;
+  }
   #topNavItems.navbar-nav > li > a {
     color: red;
   }
   #topNavItems.navbar-nav > li > a:hover,
   #topNavItems.navbar-nav > li > a:focus {
     color: green;
+    outline: none;
   }
   #topNavItems.navbar-nav > .active > a,
   #topNavItems.navbar-nav > .active > a:hover,
@@ -6874,7 +6879,7 @@ body {
   padding: 0;
 }
 .navbar-top {
-  background: linear-gradient(90deg, #e3e3e3 83%, #002142 27%);
+  background: linear-gradient(90deg, #e3e3e3 81%, #002142 19%);
   border-color: transparent;
 }
 .navbar-logo {

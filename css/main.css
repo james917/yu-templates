@@ -6803,17 +6803,19 @@ body {
     background-color: transparent;
   }
   #topNavItems.navbar-nav > li > a {
-    color: red;
+    color: #002142;
   }
   #topNavItems.navbar-nav > li > a:hover,
   #topNavItems.navbar-nav > li > a:focus {
-    color: green;
+    color: #707070;
     outline: none;
   }
-  #topNavItems.navbar-nav > .active > a,
-  #topNavItems.navbar-nav > .active > a:hover,
-  #topNavItems.navbar-nav > .active > a:focus {
-    color: purple;
+  #topNavItems .myYu {
+    color: #fff !important;
+    background-color: #959595;
+  }
+  #topNavItems .studentKit {
+    color: #fff !important;
   }
   #topNavItems.navbar-right {
     float: right !important;
@@ -6890,7 +6892,7 @@ body {
   .department-title {
     font-size: 26px;
     margin-top: 50px;
-    margin-right: -123px;
+    margin-right: -160px;
     text-transform: uppercase;
     color: #959595;
   }
